@@ -1,0 +1,27 @@
+.Game {
+
+  padding: 15vh 12vw;
+  padding-bottom: 0;
+  overflow-y: hidden;
+
+}
+
+.Game .Chat, .Game .Players, .Game .DrawArea {
+
+  display: inline-block;
+  vertical-align: top;
+  margin: 10px;
+
+}
+
+.Game .Chat, .Game .Players {
+
+  width: calc(20% - 20px);
+
+}
+
+.Game .DrawArea {
+
+  width: calc(55% - 45px);
+
+}

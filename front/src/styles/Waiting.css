@@ -1,0 +1,15 @@
+.Waiting {
+
+  padding: 15vh 12vw;
+  position: relative;
+
+}
+
+.Waiting .Chat, .Waiting .Players, .Waiting .WordsContainer {
+
+  display: inline-block;
+  vertical-align: top;
+  width: calc(30% - 20px);
+  margin: 10px;
+
+}

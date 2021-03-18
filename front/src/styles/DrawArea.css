@@ -1,0 +1,72 @@
+.DrawArea {
+
+  border: 1px solid #1F5DC1;
+  padding: 10px;
+
+}
+
+.DrawArea h1.Word {
+
+  text-align: center;
+  font-size: 1.7em;
+  color: #F8D718;
+  letter-spacing: 3px;
+
+}
+
+.DrawArea h1.Word span {
+
+  font-size: 14px;
+  vertical-align: top;
+  display: inline-block;
+  letter-spacing: 0;
+
+}
+
+.DrawArea h1.Word span.Time {
+
+  float: left;
+
+}
+
+.DrawArea h1.Word span.Round {
+
+  float: right;
+
+}
+
+.DrawArea .Tools {
+
+  text-align: center;
+
+}
+
+.DrawArea .Tools .Button[name=pencil].pencil, .DrawArea .Tools .Button[name=rubber].rubber {
+
+  color: #F8D718;
+
+}
+
+.DrawArea .Tools .ColorPickerPlaceholder {
+
+  position: relative;
+
+}
+
+.DrawArea .Tools .ColorPickerPlaceholder .ColorPickerContainer {
+
+  position: absolute;
+  bottom: 0;
+  z-index: 1000;
+
+}
+
+.DrawArea .Tools .ColorPickerPlaceholder .ColorPickerContainer .ColorPickerDismiss {
+
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+}
