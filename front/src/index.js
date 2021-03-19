@@ -13,7 +13,9 @@ import Results from './pages/Results'
 
 import './styles/App.css'
 
-const ENDPOINT = 'http://192.168.0.42:8000',
+// enter your ip address on port 8000: for multiplayer on same network, else enter localhost:8000
+
+const ENDPOINT = 'http://localhost:8000',
 socket = socketIOClient(ENDPOINT)
 
 Socket.io = socket

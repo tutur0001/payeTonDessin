@@ -87,7 +87,7 @@ module.exports = (code) => {
 
     }
 
-    sendAnnouncement(`${name} joined the game`)
+    sendAnnouncement(`${name} à rejoint la partie`)
 
   },
   addWord = (word) => {
@@ -112,7 +112,7 @@ module.exports = (code) => {
 
     }
 
-    sendAnnouncement(`${players[client.id].name} left the game`)
+    sendAnnouncement(`${players[client.id].name} à quitté la partie`)
 
     delete players[client.id]
     playersOrder.splice(playersOrder.indexOf(client.id), 1)
@@ -157,7 +157,7 @@ module.exports = (code) => {
       drawingData = []
       backgroundColor = '#fff'
 
-      sendAnnouncement(`${players[playersOrder[i]].name} is drawing!`)
+      sendAnnouncement(`${players[playersOrder[i]].name} dessine!`)
 
       for(p in players) players[p].client.emit('receiveDrawingData', drawingData)
 
@@ -274,7 +274,7 @@ module.exports = (code) => {
 
         if(round == rounds) {
 
-          sendAnnouncement(`Game ended!`)
+          sendAnnouncement(`Fin de Partie!`)
 
           for(p in players) {
 
@@ -286,7 +286,7 @@ module.exports = (code) => {
 
         }
 
-        sendAnnouncement(`Round ${round} ended!`)
+        sendAnnouncement(`Fin round ${round}!`)
         round++
         startRound()
 
@@ -299,14 +299,14 @@ module.exports = (code) => {
 
     if(Object.keys(players).length < config.min_players || status != 'waiting') {
 
-      sendAnnouncement(`Could not start game, not enough players (minimum ${config.min_players})`)
+      sendAnnouncement(`Impossible de commencer: pas assez de joueurs (minimum ${config.min_players})`)
       return
 
     }
 
     if(words.length < config.min_words) {
 
-      sendAnnouncement(`Could not start game, not enough words (minimum ${config.min_words})`)
+      sendAnnouncement(`Impossible de commencer: pas assez de mots (minimum ${config.min_words})`)
       return
 
     }
@@ -376,7 +376,7 @@ module.exports = (code) => {
         players[client.id].points += (timeLeft * 10)
         guessed.all++
 
-        sendAnnouncement(`${players[client.id].name} guessed the word!`)
+        sendAnnouncement(`${players[client.id].name} Devine le mot!`)
 
         for(p in players) {
 

@@ -55,14 +55,14 @@ export default class WordsContainer extends Component {
 
       <div className="WordsContainer">
 
-        <h1 className="title">Words ({this.state.wordsCount})</h1>
+        <h1 className="title">Mots ({this.state.wordsCount})</h1>
 
-        <textarea placeholder="Enter new words (one each line)..." name="addWord" value={this.state.addWord} onChange={this.handleChange.bind(this)}></textarea>
+        <textarea placeholder="Entrez des mots à deviner (1 par ligne)..." name="addWord" value={this.state.addWord} onChange={this.handleChange.bind(this)}></textarea>
 
-        <h1 className="title">Game code: <i>{Socket.Game.code}</i></h1>
+        <h1 className="title">Code Partie: <i>{Socket.Game.code}</i></h1>
 
-        <Button name="addNewWord" click={this.addNewWord.bind(this)}>Add words!</Button>
-        <Button name="startGame" click={this.startGame.bind(this)}>Start game!</Button>
+        <Button name="addNewWord" click={this.addNewWord.bind(this)}>Ajouter mots !</Button>
+        <Button name="startGame" click={this.startGame.bind(this)}>Commencer !</Button>
 
       </div>
 

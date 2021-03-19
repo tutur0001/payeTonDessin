@@ -31,7 +31,7 @@ export default class Results extends Component {
 
       <div className="Home">
 
-        <h1 className="title">Results</h1>
+        <h1 className="title">Résultats</h1>
 
         <Players endGame></Players>
 

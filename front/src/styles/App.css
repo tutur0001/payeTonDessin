@@ -3,7 +3,7 @@
 body {
 
   margin: 0;
-  background: linear-gradient(180deg, #1c3368, #1e2c3f);
+  background: linear-gradient(180deg, #68431c, #710303);
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -17,7 +17,6 @@ body {
 #app {
 
   min-height: 100vh;
-  background-image: url(/img/pattern.png);
   background-repeat: repeat;
   background-size: 550px;
 
@@ -49,7 +48,7 @@ a {
 input, textarea {
 
   background-color: transparent;
-  border: 1px solid #1F5DC1;
+  border: 1px solid #c16a1f;
   padding: 7px 6px;
   font-size: 17px;
 

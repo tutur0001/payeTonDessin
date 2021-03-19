@@ -79,7 +79,7 @@ export default class Chat extends Component {
 
         </ul>
 
-        <input name="msg" value={this.state.msg} onChange={this.handleChange.bind(this)} onKeyDown={this.sendMessage.bind(this)} type="text" className="MessageBox" placeholder="Press enter to send your message..." />
+        <input name="msg" value={this.state.msg} onChange={this.handleChange.bind(this)} onKeyDown={this.sendMessage.bind(this)} type="text" className="MessageBox" placeholder="Entrer pour envoyer un message..." />
 
       </div>
 

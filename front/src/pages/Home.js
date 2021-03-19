@@ -72,19 +72,19 @@ export default class Home extends Component {
 
       <div className="Home">
 
-        <h1 className="title">Welcome!</h1>
-        <h2 className="subtitle">Enter a code or create a new game!</h2>
+        <h1 className="title">Bienvenue !</h1>
+        <h2 className="subtitle">Rejoignez ou créez une partie !</h2>
 
         <input type="text" placeholder="Pseudo" name="name" value={this.state.name} onChange={this.handleChange.bind(this)} />
         <input type="text" placeholder="Code de la partie" name="gameCode" value={this.state.gameCode} onChange={this.handleChange.bind(this)} />
 
-        <Button name="join" click={this.joinGame.bind(this)}>Join game!</Button>
+        <Button name="join" click={this.joinGame.bind(this)}>Rejoindre une partie !</Button>
 
         <br/>
 
         <input type="text" placeholder="Pseudo" name="name" value={this.state.name} onChange={this.handleChange.bind(this)} />
 
-        <Button name="create" click={this.createGame.bind(this)}>Create room!</Button>
+        <Button name="create" click={this.createGame.bind(this)}>Créer une partie !</Button>
 
       </div>
 

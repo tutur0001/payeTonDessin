@@ -414,7 +414,7 @@ export default class DrawArea extends Component {
 
       <div className="DrawArea" ref={(ref) => (this.drawArea = ref)}>
 
-        <h1 className="Word"><span className="Time">{this.state.timeLeft} : {Socket.Game.timeout / 1000}</span>{this.state.word}<span className="Round">Round { this.state.round } of { Socket.Game.rounds }</span></h1>
+        <h1 className="Word"><span className="Time">{this.state.timeLeft} : {Socket.Game.timeout / 1000}</span>{this.state.word}<span className="Round">Round { this.state.round } sur { Socket.Game.rounds }</span></h1>
 
         <canvas ref={(ref) => (this.canvas = ref)} style={{ background: this.state.backgroundColor }} onMouseDown={this.onMouseDown} onMouseLeave={this.stopDrawing} onMouseUp={this.stopDrawing} onMouseMove={this.onMouseMove}></canvas>
 
@@ -422,11 +422,11 @@ export default class DrawArea extends Component {
 
           <div className="Tools">
 
-            <Button name="pencil" click={this.changeTool.bind(this)} tool={this.state.tool}>Pencil</Button>
-            <Button name="rubber" click={this.changeTool.bind(this)} tool={this.state.tool}>Ereaser</Button>
+            <Button name="pencil" click={this.changeTool.bind(this)} tool={this.state.tool}>Crayon</Button>
+            <Button name="rubber" click={this.changeTool.bind(this)} tool={this.state.tool}>Gomme</Button>
             <Button click={this.handlePencilColorPicker.bind(this)}>
 
-              Pencil color
+              Couleur Crayon
               <div className="ColorPickerPlaceholder">
 
                 { this.state.displayColorPicker ? <div className="ColorPickerContainer"><div className="ColorPickerDismiss" onClick={this.closePencilColorPicker.bind(this)}></div><ChromePicker color={this.state.strokeStyle} onChangeComplete={this.handleStrokeColorChange.bind(this)} /></div> : null }
@@ -436,7 +436,7 @@ export default class DrawArea extends Component {
             </Button>
             <Button click={this.handleBackgroundColorPicker.bind(this)}>
 
-              Bg color
+              Couleur Fond
               <div className="ColorPickerPlaceholder">
 
                 { this.state.displayBackgroundColorPicker ? <div className="ColorPickerContainer"><div className="ColorPickerDismiss" onClick={this.closeBgColorPicker.bind(this)}></div><ChromePicker color={this.state.backgroundColor} onChangeComplete={this.handleBackgroundColorChange.bind(this)} /></div> : null }

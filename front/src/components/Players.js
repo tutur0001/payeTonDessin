@@ -94,7 +94,7 @@ export default class Players extends Component {
 
       <div className="Players">
 
-        <h1 className="title">Players</h1>
+        <h1 className="title">Joueurs</h1>
 
         <ul>
 
