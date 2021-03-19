@@ -1,10 +1,11 @@
 {
-  "name": "scribbleio-clone",
+  "name": "paye-ton-dessin",
   "version": "1.0.0",
-  "description": "A scribble.io clone written in Node, express and socketio",
+  "description": "",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
   },
   "repository": {},
   "author": "Codex",
