@@ -170,7 +170,6 @@ module.exports = (code) => {
 
         let timeLeftCounter = setInterval(() => {
 
-          //to make sure
           if(!thisRound)
             return
 
@@ -372,8 +371,6 @@ module.exports = (code) => {
     if(currentWord != null && message.toLowerCase().replace(/\s/g, '') == currentWord.toLowerCase().replace(/\s/g, '') && status == 'running') {
 
       if(!players[client.id].didGuessWord && client.id != currentDrawer) {
-
-        //max points + is config.timeout * 10
 
         players[client.id].didGuessWord = true
         players[client.id].points += (timeLeft * 10)
